@@ -23,7 +23,7 @@ int degree(struct vector *root)
         if (max < root->man->children->size) {
             max = root->man->children->size;
         }
-        root->next;
+        root = root->next;
     }
     
     return max;
