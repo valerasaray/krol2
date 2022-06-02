@@ -6,7 +6,7 @@ int main(int argc, char const *argv[])
 {
 	FILE *file = fopen(argv[1], "rb");
 	int len = 0, c;
-	while(fscanf(file, "%d", &c) == 1) {
+	while(fscanf(file, "%d", &c)) {
 		len++;
 	}
 	fseek(file, 0, SEEK_SET);
