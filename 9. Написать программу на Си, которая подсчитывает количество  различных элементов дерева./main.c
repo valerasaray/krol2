@@ -18,6 +18,8 @@ int main()
     struct decue *dc;
     int size_d = init(dc);
     struct tree_iter *iter;
+    struct decue *mem;
+    init(mem);
     
     while (iter != NULL) {
         push_b(iter, dc);
