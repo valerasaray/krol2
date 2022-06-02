@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 struct tree_iter {
-    int value;
-    struct tree_node *next;
-    struct tree_node *prev;
+    struct tree_node *node;
+    struct tree_iter *next;
+    struct tree_iter *prev;
 };
 
 struct decue {
@@ -22,7 +22,7 @@ int main()
     init(mem);
     
     while (iter != NULL) {
-        push_b(iter, dc);
+        push_b(iter->node, dc);
         iter = iter->next;
     }
     
