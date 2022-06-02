@@ -16,24 +16,24 @@ int main()
 {   
     int cnt = 0;
     struct decue *dc;
-    struct tree_iter *iter;
     int size_d = init(dc);
-    
+    struct tree_iter *iter;
     struct decue *mem;
-    init(mem); 
+    init(mem);
+    
     while (iter != NULL) {
         push_b(iter, dc);
         iter = iter->next;
     }
     
-    while (iter != NULL) {
-        if (!in_dc(iter, mem)) {
-            push_b(iter, mem);
+    while (dc != NULL) {
+        if (!in_dc(dc, mem)) {
+            push_b(dc, mem);
             cnt++;
         }
-        iter = iter->next;
+        dc = dc->next;
     }
-
+    
     printf("%d\n", cnt);
 
     return 0;
