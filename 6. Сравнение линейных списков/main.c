@@ -2,7 +2,6 @@
 
 struct list {
     struct list *next;
-    struct list *prev;
     int val;
 }
 
