@@ -9,7 +9,7 @@ struct tree_iter {
 struct decue {
     struct decue *next;
     struct decue *prev;
-    int value;
+    struct tree_node *node;
 };
 
 int main()
@@ -27,8 +27,8 @@ int main()
     }
     
     while (dc != NULL) {
-        if (!in_dc(dc, mem)) {
-            push_b(dc, mem);
+        if (!in_dc(dc->node, mem)) {
+            push_b(dc->node, mem);
             cnt++;
         }
         dc = dc->next;
