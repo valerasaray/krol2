@@ -1,19 +1,36 @@
 #include <stdio.h>
 
-int main()
+int getFileSize(FILE* fd){
+    int _file_size = 0;
+    if(fd == NULL){
+        _file_size = -1;
+    }
+    else{
+        while(getc(fd) != EOF)
+            _file_size++;
+    }
+    fseek(fd, 0, SEEK_SET);
+    return _file_size;
+}
+ 
+
+int main(int argc, char const *argv[])
 {   
-    FILE *f1;
-    file = fopen(f1, "rb");
+    FILE *file;
+    file = fopen(argv[1], "rb+");
     
-    if (file != NULL) {
+    if (file == NULL) {
         return 1;
     }
-    
-    for (int i = 0; i < len(file) / 2; i++) {
+    int n = 0;
+
+    printf("%d\n", getFileSize(file));
+
+    for (int i = 0; i < getFileSize(file) / 2; i++) {
         fseek(file, i, SEEK_SET);
         int left = getc(file);
         
-        fseek(file, i, SEEK_END);
+        fseek(file, -(i + 1) , SEEK_END);
         int right = getc(file);
         
         fseek(file, i, SEEK_SET);
