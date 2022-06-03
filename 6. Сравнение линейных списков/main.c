@@ -22,6 +22,8 @@ int main()
             list1 = list1->next;
             list2 = list2->next;
         }
+    } else {
+        flag = 0;
     }
     
     if (flag) {
