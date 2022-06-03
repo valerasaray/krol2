@@ -18,6 +18,7 @@ int main()
         while (list1 != NULL && list2 != NULL) {
             if (list1->val != list2->val) {
                 flag = 0;
+                break;
             }
             list1 = list1->next;
             list2 = list2->next;
