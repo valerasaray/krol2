@@ -18,14 +18,14 @@ int main(int argc, char const *argv[])
 			if (a && b) {
 				s.push(a);
 			} else {
-				s.push(a + b);
+				s.push(a || b);
 			}
 		} else if (c == '*') {
 			a = (int)(s.top());
 			s.pop();
 			b = (int)(s.top());
 			s.pop();
-			s.push(a * b);
+			s.push(a && b);
 		}
 	}
 	printf("\n%d\n", s.top());
