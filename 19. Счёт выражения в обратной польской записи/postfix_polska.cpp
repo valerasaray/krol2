@@ -10,7 +10,7 @@ int main(int argc, char const *argv[])
 	while (c != EOF) {
 		c = getchar();
 		if (isdigit(c)) {
-			ungetc(c, stdin);
+			ungetc(c, stdin); // вернуть только что считаный символ обратно строку
         	scanf("%d", &inp);
         	s.push(inp);	
 		} else if (c == '+') {
