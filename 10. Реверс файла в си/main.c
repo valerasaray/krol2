@@ -24,8 +24,6 @@ int main(int argc, char const *argv[])
     }
     int n = 0;
 
-    printf("%d\n", getFileSize(file));
-
     for (int i = 0; i < getFileSize(file) / 2; i++) {
         fseek(file, i, SEEK_SET);
         int left = getc(file);
