@@ -27,7 +27,7 @@ int main()
     }
     
     while (dc != NULL) {
-        if (!in_dc(dc->node, mem)) {
+        if (!in_dc(dc->node, mem)) { // тут и зарыта собака
             push_b(dc->node, mem);
             cnt++;
         }
