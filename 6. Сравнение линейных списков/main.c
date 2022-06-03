@@ -10,7 +10,7 @@ int main()
     struct list *list1;
     struct list *list2;
     
-    int size1 = init_list(list1);
+    int size1 = init_list(list1); // функция возвр. размер
     int size2 = init_list(list2);
     
     int flag = 1;
