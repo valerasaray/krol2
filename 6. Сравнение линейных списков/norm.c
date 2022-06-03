@@ -19,6 +19,7 @@ int check(list *l, list *r) {
         if (a->data > b->data) {
             return 1;
         }
+        cur++;
     }
     if (l->size < r->size) {
         return -1;
