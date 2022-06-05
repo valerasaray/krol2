@@ -1,4 +1,31 @@
 // Сложность алгоритма O(n + m), где n - количество вершин, m - количество ребер
+
+typedef enum {
+    FINAL,
+    INTEGER,
+    OPERATOR,
+    VARIABLE,
+    BRACKET,
+    ERROR,
+} TokenType;
+
+typedef struct {
+    TokenType type;
+    union {
+        int   value_int;
+        char  operator_name;
+        bool  is_left_bracket;
+        char  variable_name;
+    } data;
+} Token;
+
+typedef struct tree_node *Tree;
+struct tree_node {
+    Token node;
+    Tree left;
+    Tree right;
+};
+
 Tree delete_expression(Tree t) {
 	if (t == NULL) {
 		return t;
