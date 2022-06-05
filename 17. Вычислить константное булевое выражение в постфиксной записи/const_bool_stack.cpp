@@ -16,11 +16,7 @@ int main(int argc, char const *argv[])
 			s.pop();
 			b = (int)(s.top());
 			s.pop();
-			if (a && b) {
-				s.push(a);
-			} else {
-				s.push(a || b);
-			}
+			s.push(a || b);
 		} else if (c == '*') {
 			a = (int)(s.top());
 			s.pop();
