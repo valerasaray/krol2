@@ -1,3 +1,4 @@
+// Сложность алгоритма: O(n)
 #include <stdio.h>
 
 int getFileSize(FILE* fd){
