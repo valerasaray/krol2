@@ -1,3 +1,4 @@
+// Сложность алгоритма O(n + m), где n - количество вершин, m - количество ребер
 Tree delete_expression(Tree t) {
 	if (t == NULL) {
 		return t;
