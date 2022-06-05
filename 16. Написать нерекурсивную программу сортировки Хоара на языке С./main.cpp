@@ -1,3 +1,4 @@
+// Сложность алгоритма O(n * log(n)), где n - размер массива
 #include <bits/stdc++.h>
 
 using namespace std;
