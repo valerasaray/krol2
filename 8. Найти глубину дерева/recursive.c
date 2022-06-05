@@ -1,3 +1,4 @@
+// Сложность алгоритма: O(n + m), где n - колво вершин, m - колво ребер
 size_t depth(node *tree)
 {
 	if (tree == NULL) {
