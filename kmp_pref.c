@@ -1,4 +1,4 @@
-// КНУТТ МОРРИС ПРАТТ
+// КНУТ МОРРИС ПРАТТ
 #include <stdio.h>
 #include <stdlib.h>
 
