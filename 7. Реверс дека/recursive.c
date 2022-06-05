@@ -1,3 +1,4 @@
+//Сложность алгоритма O(n)
 deque *reverse(deque *d)
 {
 	int x;
