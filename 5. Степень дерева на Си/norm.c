@@ -1,4 +1,4 @@
-
+// Сложность алгоритма: O(v + e), где v - количество вершин, а e - количество дуг
 typedef struct _tree {
     int data;
     struct _tree *child;
