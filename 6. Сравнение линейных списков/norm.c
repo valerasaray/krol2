@@ -1,3 +1,4 @@
+//Сложность алгоритма O(n)
 typedef struct _list_node {
     int data;
     struct _list_node *next;
