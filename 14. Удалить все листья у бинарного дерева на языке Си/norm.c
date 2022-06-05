@@ -1,4 +1,4 @@
-
+// Сложность алгоритма O(n + m), где n - количество вершин, m - количество ребер
 void delete_leafs(tree *t) {
     if (t == NULL) {
         return;
