@@ -1,4 +1,4 @@
-
+// Сортировка выбором: O(n^2)
 int remove_max(stack∗ s)
 {
 	stack tmp;
