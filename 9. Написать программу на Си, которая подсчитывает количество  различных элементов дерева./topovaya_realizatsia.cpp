@@ -1,3 +1,4 @@
+// алгоритм не актуален
 #include <bits/stdc++.h>
 
 using namespace std;
