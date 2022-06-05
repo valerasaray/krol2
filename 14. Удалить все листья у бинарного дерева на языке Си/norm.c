@@ -1,4 +1,5 @@
-void delete(tree *t) {
+
+void delete_leafs(tree *t) {
     if (t == NULL) {
         return;
     }
@@ -7,7 +8,7 @@ void delete(tree *t) {
             free(t->left);
             t->left = NULL;
         } else {
-            delete(t->left);
+            delete_leafs(t->left);
         }
     }
     if (t->right != NULL) {
@@ -15,7 +16,7 @@ void delete(tree *t) {
             free(t->right);
             t->right = NULL;
         } else {
-            delete(t->right);
+            delete_leafs(t->right);
         }
     }
 }
