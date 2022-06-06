@@ -10,10 +10,10 @@ int remove_max(stack∗ s)
 			max = top(&tmp);
 		}
 	}
-	int n = 0;
+	int flag = 1;
 	while (!is_empty(&tmp)) {
-		if((top(&tmp) == max) && (n == 0)) {
-			n++;
+		if((top(&tmp) == max) && flag) {
+			flag--;
 			pop(&tmp);
 		}
 		else {
