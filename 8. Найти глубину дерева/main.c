@@ -1,3 +1,4 @@
+// Сложность алгоритма: O(n + m), где n - колво вершин, m - колво ребер
 #include <stdio.h>
 
 struct tree_node {
