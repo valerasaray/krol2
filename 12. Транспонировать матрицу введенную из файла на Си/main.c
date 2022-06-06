@@ -1,3 +1,4 @@
+// Сложность алгоритма O(n^2), где n - колво строк матрицы в файле
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
