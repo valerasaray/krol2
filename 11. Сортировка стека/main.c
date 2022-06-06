@@ -13,7 +13,7 @@ int remove_max(stack∗ s)
 	int flag = 1;
 	while (!is_empty(&tmp)) {
 		if((top(&tmp) == max) && flag) {
-			flag--;
+			flag = 0;
 			pop(&tmp);
 		}
 		else {
