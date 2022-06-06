@@ -32,9 +32,9 @@ int main(int argc, char const *argv[])
         int right = fgetc(file);
         
         fseek(file, i, SEEK_SET);
-        putc(right, file);
+        fputc(right, file);
         fseek(file, -(i + 1), SEEK_END);
-        putc(left, file);
+        fputc(left, file);
     }
     
     fclose(file);
