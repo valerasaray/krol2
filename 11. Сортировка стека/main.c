@@ -5,10 +5,9 @@ int remove_max(stack∗ s)
 	create (&tmp);
 	int max = top(s);
 	while(!is_empty(s)) {
-		if (push(&tmp, pop(s))) {
-			if (top(&tmp) > max) {
-				max = top(&tmp);
-			}
+		push(&tmp, pop(s))) 
+		if (top(&tmp) > max) {
+			max = top(&tmp);
 		}
 	}
 	int n = 0;
