@@ -23,7 +23,6 @@ int main(int argc, char const *argv[])
     if (file == NULL) {
         return 1;
     }
-    int n = 0;
 
     for (int i = 0; i < getFileSize(file) / 2; i++) {
         fseek(file, i, SEEK_SET);
