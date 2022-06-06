@@ -26,10 +26,10 @@ int main(int argc, char const *argv[])
 
     for (int i = 0; i < getFileSize(file) / 2; i++) {
         fseek(file, i, SEEK_SET);
-        int left = getc(file);
+        int left = fgetc(file);
         
         fseek(file, -(i + 1) , SEEK_END);
-        int right = getc(file);
+        int right = fgetc(file);
         
         fseek(file, i, SEEK_SET);
         putc(right, file);
